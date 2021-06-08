@@ -71,3 +71,14 @@ error: cannot find kernel config
   try running this script again, specifying the kernel config:
   set CONFIG=/path/to/kernel/.config or add argument /path/to/kernel/.config
 ```
+
+Check for the wellbeing of kubectl (pronounced: Kube Controller) inside the k3s container:
+
+```
+$ kubectl --version
+Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.4+k3s1", GitCommit:"97b7a0e9df2883f08028fb7171c1e62fc1899a0c", GitTreeState:"clean", BuildDate:"2020-06-18T01:30:45Z", GoVersion:"go1.13.11", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server 127.0.0.1:8443 was refused - did you specify the right host or port?
+```
+
+
+
