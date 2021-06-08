@@ -93,8 +93,16 @@ REASON: We need to start the k3s server as follows:
 
 ***Documentation***: https://www.rancher.co.jp/docs/k3s/latest/en/running/
 
+See all options for k3s server:
+
 ```
-$ k3s server
+$ k3s server --help
+```
+
+Start k3s server
+
+```
+$ k3s server start
 ```
 
 Get Nodes with kubectl (requires: kubeconfig):
