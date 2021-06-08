@@ -95,9 +95,13 @@ Get Nodes with kubectl (requires: kubeconfig):
 ```
 $ ls
 kubeconfig
-$ export 
-$ kubectl get nodes -o wide
-
+$ readlink -f kubeconfig # use the path and filename returned from this command as the input for the next line
+$ export KUBECONFIG=/kubeconfig # replace this with the output of previous line
+$ echo $KUBECONFIG
+$ kubectl --kubeconfig=$KUBECONFIG get nodes -o wide
+The connection to the server k3s:8443 was refused - did you specify the right host or port?
 ```
+
+***Note***: ```The connection to the server 127.0.0.1:8443 was refused - did you specify the right host or port?```. TO DO: Explain this...
 
 more ...
