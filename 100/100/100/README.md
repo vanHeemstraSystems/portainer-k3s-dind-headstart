@@ -30,6 +30,8 @@ failed to get container info for "/docker/a686584549b729120040b599872addc0de3d46
 unknown container "/docker/a686584549b729120040b599872addc0de3d46f65848eff6d6c49b5d998fb0b1/systemd"
 ```
 
+## 100 - Going inside k3s Docker container
+
 Enter the k3s Docker container as follows:
 
 ***Note***: You can get the ```CONTAINER_NAME``` (here: k3s) from docker ps command.
@@ -38,6 +40,8 @@ Enter the k3s Docker container as follows:
 $ docker exec -it k3s bash
 bash-5.0# 
 ```
+
+### 100 - k3s
 
 Now ***inside*** the k3s container you can check k3s, like so:
 
@@ -72,6 +76,8 @@ error: cannot find kernel config
   set CONFIG=/path/to/kernel/.config or add argument /path/to/kernel/.config
 ```
 
+### 200 - kubectl
+
 Check for the wellbeing of kubectl (pronounced: Kube Controller) inside the k3s container:
 
 ```
@@ -81,4 +87,4 @@ The connection to the server 127.0.0.1:8443 was refused - did you specify the ri
 ```
 
 
-
+more ...
