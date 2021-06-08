@@ -29,3 +29,12 @@ failed to get cgroup stats for "/docker/a686584549b729120040b599872addc0de3d46f6
 failed to get container info for "/docker/a686584549b729120040b599872addc0de3d46f65848eff6d6c49b5d998fb0b1/systemd": 
 unknown container "/docker/a686584549b729120040b599872addc0de3d46f65848eff6d6c49b5d998fb0b1/systemd"
 ```
+
+Enter the k3s Docker container as follows:
+
+***Note***: You can get the ```CONTAINER_NAME``` from docker ps command.
+
+```
+$ docker exec -it CONTAINER_NAME bash
+```
+
