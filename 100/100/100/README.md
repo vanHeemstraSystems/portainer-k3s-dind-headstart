@@ -32,9 +32,15 @@ unknown container "/docker/a686584549b729120040b599872addc0de3d46f65848eff6d6c49
 
 Enter the k3s Docker container as follows:
 
-***Note***: You can get the ```CONTAINER_NAME``` from docker ps command.
+***Note***: You can get the ```CONTAINER_NAME``` (here: k3s) from docker ps command.
 
 ```
-$ docker exec -it CONTAINER_NAME bash
+$ docker exec -it k3s bash
+bash-5.0# 
 ```
 
+Now ***inside*** the k3s container you can check k3s config, like so:
+
+```
+$ k3s check-config
+```
