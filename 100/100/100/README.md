@@ -104,4 +104,6 @@ The connection to the server k3s:8443 was refused - did you specify the right ho
 
 ***Note***: ```The connection to the server k3s:8443 was refused - did you specify the right host or port?```. TO DO: Explain this...
 
+***WATCH***: The connection to the server ```host:port``` was refused - did you specify the right host or port? fixed in video at YouTube: https://www.youtube.com/watch?v=DwY98vmZbE4
+
 more ...
