@@ -7,5 +7,7 @@ Based on "Managing Docker with Portainer" at https://www.crunchlearn.com/courses
 
 See also "Portainer : Managing your Docker containers just became easier." at https://vijayvikram11844.medium.com/portainer-to-manage-docker-4a30944ddb99
 
+See also "k3s" at https://github.com/k3s-io/k3s
+
 ## 100 - Portainer with k3s
 See [README.md](./100/README.md)
