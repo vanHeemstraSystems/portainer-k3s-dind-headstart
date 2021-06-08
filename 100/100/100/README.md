@@ -122,8 +122,24 @@ REASON: We need to start the k3s server as follows:
 
 ***Documentation***: https://www.rancher.co.jp/docs/k3s/latest/en/running/
 
+See all options for k3s server:
+
+```
+$ k3s server --help
+```
+
 ```
 $ k3s server
+```
+
+***Seen Error***: v1beta1.metrics.k8s.io failed with: failing or missing response from https://10.43.154.16:443/apis/metrics.k8s.io/v1beta1
+
+Check it with:
+
+```
+$ kubectl describe apiservice v1beta1.metrics.k8s.io
+
+
 ```
 
 more ...
