@@ -78,6 +78,8 @@ error: cannot find kernel config
 
 ### 200 - kubectl
 
+***Documentation***: https://pgillich.medium.com/setup-lightweight-kubernetes-with-k3s-6a1c57d62217
+
 Check for the wellbeing of kubectl (pronounced: Kube Controller) inside the k3s container:
 
 ```
@@ -86,5 +88,16 @@ Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.4+k3s1", G
 The connection to the server 127.0.0.1:8443 was refused - did you specify the right host or port?
 ```
 
+***Note***: ```The connection to the server 127.0.0.1:8443 was refused - did you specify the right host or port?```. TO DO: Explain this...
+
+Get Nodes with kubectl (requires: kubeconfig):
+
+```
+$ ls
+kubeconfig
+$ export 
+$ kubectl get nodes -o wide
+
+```
 
 more ...
