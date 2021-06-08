@@ -50,6 +50,8 @@ k3s version v1.18.4+k3s1 (97b7a0e9)
 
 Check the k3s config (output may differ):
 
+***Documentation***: https://pgillich.medium.com/setup-lightweight-kubernetes-with-k3s-6a1c57d62217
+
 ```
 $ k3s check-config
 Verifying binaries in /var/lib/rancher/k3s/data/3a8d3d90c0ac3531edbdbde77ce4a85062f4af8865b98cedc30ea730715d9d48/bin:
