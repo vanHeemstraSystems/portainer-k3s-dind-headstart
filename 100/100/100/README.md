@@ -39,8 +39,33 @@ $ docker exec -it k3s bash
 bash-5.0# 
 ```
 
-Now ***inside*** the k3s container you can check k3s config, like so:
+Now ***inside*** the k3s container you can check k3s, like so:
+
+```
+$ k3s --version
+k3s version v1.18.4+k3s1 (97b7a0e9)
+```
+
+***Note***: You may have a different version than above.
+
+Check the k3s config (output may differ):
 
 ```
 $ k3s check-config
+Verifying binaries in /var/lib/rancher/k3s/data/3a8d3d90c0ac3531edbdbde77ce4a85062f4af8865b98cedc30ea730715d9d48/bin:
+- sha256sum: good
+- links: good
+
+System:
+- /sbin iptables v1.8.3 (legacy): ok
+- swap: should be disabled
+- routes: ok
+
+Limits:
+- /proc/sys/kernel/keys/root_maxkeys: 1000000
+
+modprobe: can't change directory to '/lib/modules': No such file or directory
+error: cannot find kernel config 
+  try running this script again, specifying the kernel config:
+  set CONFIG=/path/to/kernel/.config or add argument /path/to/kernel/.config
 ```
