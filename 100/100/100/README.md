@@ -11,10 +11,10 @@ Check with the following if the k3s container has started.
 $ docker ps
 ```
 
-If started, check the logs of the k3s containers as follows:
+If started, check the logs of the k3s containers as follows, using the ```[CONTAINER_ID]``` found previously:
 
 ```
-$ docker container logs --details k3s
+$ docker container logs --details [CONTAINER_ID]
 ```
 
 Output from the k3s container logs could be, for example:
