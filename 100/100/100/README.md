@@ -13,6 +13,8 @@ $ docker ps
 
 If started, check the logs of the k3s containers as follows, using the ```[CONTAINER_ID]``` found previously:
 
+***Documentation***: https://docs.docker.com/engine/reference/commandline/container_logs/
+
 ```
 $ docker container logs --details [CONTAINER_ID]
 ```
