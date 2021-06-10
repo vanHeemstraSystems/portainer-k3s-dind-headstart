@@ -1,4 +1,7 @@
 # 100 - k3s with docker-compose (recommended)
+
+***Note***: See for k3s additional installation instructions https://github.com/vanHeemstraSystems/k3s-headstart
+
 ```
 $ cd containers/k3s-dind/
 $ cp sample.docker-compose.yml docker-compose.yml
